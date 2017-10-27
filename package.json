@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "axios": "^0.16.2",
+    "md5": "^2.2.1",
+    "ramda": "^0.25.0",
+    "request-watcher": "^1.4.3",
+    "request-watcher-axios": "^1.0.6",
+    "request-watcher-server": "^1.0.1"
+  }
+}
