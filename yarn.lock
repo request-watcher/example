@@ -641,9 +641,9 @@ request-watcher-server@^1.4.3:
     ramda "^0.25.0"
     socket.io "^2.0.3"
 
-request-watcher@^1.4.3:
-  version "1.4.3"
-  resolved "https://registry.yarnpkg.com/request-watcher/-/request-watcher-1.4.3.tgz#4aa38bc2541cf2e1495df0a827e92e74a8edfca2"
+request-watcher@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/request-watcher/-/request-watcher-1.5.0.tgz#f2c18de61e825ce14f8f76c00fbc25bba201eb93"
   dependencies:
     axios "^0.17.0"
     md5 "^2.2.1"

@@ -16,3 +16,21 @@ for (let i of [1,2,3]) {
       console.log('fail', err)
     })
 }
+
+// logger
+const formatLogger = { title: 'title', content: 'content'}
+const { emitLog } = watcher()
+emitLog(formatLogger)
+
+// Shortcut
+watcher.logger('content')
+const logger = {
+  status: 200,
+  data: [
+    {
+      name: 'lisiur',
+      age: 22
+    }
+  ]
+}
+watcher.logger(logger)
