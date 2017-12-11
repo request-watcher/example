@@ -2,9 +2,9 @@ const R = require('ramda')
 const axios = require('axios')
 const watcher = require('request-watcher')
 
-watcher.global.appname = "test-app"
-watcher.global.save = true
 watcher.use(require('request-watcher-axios'))
+watcher.global.appname = "test-app"
+watcher.global.save = false
 
 const jsonDataUrl = 'http://localhost:2333/return-json?a=1&b=好'
 

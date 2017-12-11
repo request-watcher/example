@@ -558,9 +558,9 @@ readable-stream@2.2.7:
     string_decoder "~1.0.0"
     util-deprecate "~1.0.1"
 
-request-watcher-axios@^1.1.5:
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/request-watcher-axios/-/request-watcher-axios-1.1.5.tgz#19de3bcae1305f78282691514d7749b0ae041646"
+request-watcher-axios@^1.2.6:
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/request-watcher-axios/-/request-watcher-axios-1.2.6.tgz#df7a466621b66ae1fdaae535421ca5086743d073"
   dependencies:
     md5 "^2.2.1"
     ramda "^0.25.0"
@@ -579,9 +579,9 @@ request-watcher-server@^1.0.1:
     ramda "^0.25.0"
     socket.io "^2.0.3"
 
-request-watcher@^1.6.1:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/request-watcher/-/request-watcher-1.6.1.tgz#ae6a4b49962b1ca0a148e0e03cf96a98afd11e78"
+request-watcher@^1.7.8:
+  version "1.7.8"
+  resolved "https://registry.yarnpkg.com/request-watcher/-/request-watcher-1.7.8.tgz#6bfc61e4c5f69143ba15f33ab0216aca0002575e"
   dependencies:
     axios "^0.17.0"
     md5 "^2.2.1"
