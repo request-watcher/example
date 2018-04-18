@@ -1,13 +1,13 @@
 const R = require('ramda')
 const axios = require('axios')
-const watcher = require('request-watcher')
+const Watcher = require('request-watcher')
 
 // these config just need to be defined once
 axios.interceptors.request.use(function (config) {
 
   // generate the emit pair, 
   // and use config to send emitRes to axios.interceptors.response's callback
-  const { emitReq, emitRes } = watcher()
+  const { emitReq, emitRes } = Watcher()
   config.__emitRes__ = emitRes
 
   // generate the emitReq params

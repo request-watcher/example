@@ -1,10 +1,10 @@
 const R = require('ramda')
 const axios = require('axios')
-const watcher = require('request-watcher')
+const Watcher = require('request-watcher')
+const axiosWatcher = require('request-watcher-axios')
 
-watcher.use(require('request-watcher-axios'))
-watcher.global.appname = "test-app"
-watcher.global.save = false
+Watcher.use(axiosWatcher(axios))
+Watcher.global.username = 'lisiur'
 
 const jsonDataUrl = 'http://localhost:2333/return-json?a=1&b=好'
 
@@ -20,12 +20,12 @@ for (let i of [1,2,3]) {
 
 // logger
 const formatLogger = { title: 'title', content: 'content'}
-const { emitLog } = watcher()
+const { emitLog } = Watcher()
 emitLog(formatLogger)
 
 // Shortcut
-watcher.logger('content')
-const logger = {
+Watcher.logger('content')
+const log = {
   status: 200,
   data: [
     {
@@ -34,4 +34,4 @@ const logger = {
     }
   ]
 }
-watcher.logger(logger)
+Watcher.logger(log)
